@@ -2,23 +2,23 @@
 
 namespace Players;
 
-public class player
+public class Player
 {
     string name;
     int health;
-    weapon weapon;
+    Weapon weapon;
     
 
-    public player(string Name, int Health = 100, weapon Weapon)
+    public Player(string Name, Weapon Weapon, int Health = 100)
     {
         name = Name;
         health = Health;
         weapon = Weapon;
     }
 
-    public takeDamage(int Amount)
+    public string takeDamage(int Amount)
     {
         health -= Amount; //Hurt player by Amount
-        return Amount;
+        return $"{name} took {Amount} damage!";
     }
 }

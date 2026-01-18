@@ -3,21 +3,20 @@ using Players;
 
 namespace Weapons;
 
-public class weapon
+public class Weapon
 {
     string type;
     string action;
 
 
-    public weapon(string Type, string Action)
+    public Weapon(string Type, string Action)
     {
         type = Type;
         action = Action;
     }
 
-    strike(int Damage, player Strike)
+    public string Strike(int Damage)
     {
-        Strike.takeDamage(Damage);
-        return random.Next();
+        return $"The {type} {action}. It causes {Damage} damage.";
     }
 }

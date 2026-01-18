@@ -1,0 +1,15 @@
+/mnt/projects/School/OTC/Data_struct/Dual/obj/Debug/net8.0/Dual.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/projects/School/OTC/Data_struct/Dual/obj/Debug/net8.0/Dual.AssemblyInfoInputs.cache
+/mnt/projects/School/OTC/Data_struct/Dual/obj/Debug/net8.0/Dual.AssemblyInfo.cs
+/mnt/projects/School/OTC/Data_struct/Dual/obj/Debug/net8.0/Dual.csproj.CoreCompileInputs.cache
+/mnt/projects/School/OTC/Data_struct/Dual/obj/Debug/net8.0/Dual.sourcelink.json
+/mnt/projects/School/OTC/Data_struct/Dual/bin/Debug/net8.0/Dual
+/mnt/projects/School/OTC/Data_struct/Dual/bin/Debug/net8.0/Dual.deps.json
+/mnt/projects/School/OTC/Data_struct/Dual/bin/Debug/net8.0/Dual.runtimeconfig.json
+/mnt/projects/School/OTC/Data_struct/Dual/bin/Debug/net8.0/Dual.dll
+/mnt/projects/School/OTC/Data_struct/Dual/bin/Debug/net8.0/Dual.pdb
+/mnt/projects/School/OTC/Data_struct/Dual/obj/Debug/net8.0/Dual.dll
+/mnt/projects/School/OTC/Data_struct/Dual/obj/Debug/net8.0/refint/Dual.dll
+/mnt/projects/School/OTC/Data_struct/Dual/obj/Debug/net8.0/Dual.pdb
+/mnt/projects/School/OTC/Data_struct/Dual/obj/Debug/net8.0/Dual.genruntimeconfig.cache
+/mnt/projects/School/OTC/Data_struct/Dual/obj/Debug/net8.0/ref/Dual.dll
