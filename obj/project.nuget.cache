@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "9tDTJ8cl7Ic=",
+  "success": true,
+  "projectFilePath": "/mnt/projects/School/OTC/Data_struct/Dual/Dual.csproj",
+  "expectedPackageFiles": [
+    "/home/n3kodash/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.23/microsoft.aspnetcore.app.ref.8.0.23.nupkg.sha512"
+  ],
+  "logs": []
+}
