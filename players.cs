@@ -4,10 +4,9 @@ namespace Players;
 
 public class Player
 {
-    string name;
-    int health;
-    Weapon weapon;
-    
+    public string name;
+    public int health;
+    public Weapon weapon;
 
     public Player(string Name, Weapon Weapon, int Health = 100)
     {
@@ -19,6 +18,8 @@ public class Player
     public string takeDamage(int Amount)
     {
         health -= Amount; //Hurt player by Amount
-        return $"{name} took {Amount} damage!";
+        if (health < 0)
+            health = 0;
+        return $"{name} took {Amount} damage! Health: {health}";
     }
 }

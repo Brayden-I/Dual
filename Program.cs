@@ -45,26 +45,42 @@ class Program
 
         //DUEL
         Random rand = new Random();
-        while (true)
+        while (player1.health > 0 && player2.health > 0)
         {
-            int damage = rand.Next(5, 21); //Random damage between 5 and 20
+            int damage = rand.Next(1, 12);
 
             //Player 1 attacks Player 2
-            Console.WriteLine($"{player1.takeDamage(damage)}");
+            Console.WriteLine($"{player2.takeDamage(damage)}");
             Console.WriteLine(weapon1.Strike(damage));
             Console.WriteLine();
             Console.WriteLine("-----");
 
-            Console.ReadLine(); //Wait for user to press Enter to continue
+            Console.ReadLine();
+
+            //Check if Player 2 is defeated
+            if (player2.health <= 0)
+            {
+                Console.WriteLine($"\n{player1.name} wins! {player2.name} has been defeated!");
+                Console.WriteLine($"Final Health - {player1.name}: {player1.health}, {player2.name}: {player2.health}");
+                break;
+            }
 
             //Player 2 attacks Player 1
-            damage = rand.Next(1, 12); //Random damage between 5 and 20
-            Console.WriteLine($"{player2.takeDamage(damage)}");
+            damage = rand.Next(1, 12);
+            Console.WriteLine($"{player1.takeDamage(damage)}");
             Console.WriteLine(weapon2.Strike(damage));
             Console.WriteLine();
             Console.WriteLine("-----");
 
-            Console.ReadLine(); //Wait for user to press Enter to continue
+            Console.ReadLine();
+
+            //Check if Player 1 is defeated
+            if (player1.health <= 0)
+            {
+                Console.WriteLine($"\n{player2.name} wins! {player1.name} has been defeated!");
+                Console.WriteLine($"Final Health - {player1.name}: {player1.health}, {player2.name}: {player2.health}");
+                break;
+            }
         }
     }
 }
