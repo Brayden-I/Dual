@@ -22,4 +22,9 @@ public class Player
             health = 0;
         return $"{name} took {Amount} damage! Health: {health}";
     }
+
+    public bool isAlive()
+    {
+        return health > 0;
+    }
 }

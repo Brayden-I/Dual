@@ -45,7 +45,7 @@ class Program
 
         //DUEL
         Random rand = new Random();
-        while (player1.health > 0 && player2.health > 0)
+        while (player1.isAlive() && player2.isAlive())
         {
             int damage = rand.Next(1, 12);
 
@@ -58,7 +58,7 @@ class Program
             Console.ReadLine();
 
             //Check if Player 2 is defeated
-            if (player2.health <= 0)
+            if (player2.isAlive())
             {
                 Console.WriteLine($"\n{player1.name} wins! {player2.name} has been defeated!");
                 Console.WriteLine($"Final Health - {player1.name}: {player1.health}, {player2.name}: {player2.health}");
@@ -75,7 +75,7 @@ class Program
             Console.ReadLine();
 
             //Check if Player 1 is defeated
-            if (player1.health <= 0)
+            if (player1.isAlive())
             {
                 Console.WriteLine($"\n{player2.name} wins! {player1.name} has been defeated!");
                 Console.WriteLine($"Final Health - {player1.name}: {player1.health}, {player2.name}: {player2.health}");
