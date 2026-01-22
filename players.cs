@@ -10,6 +10,9 @@ public class Player
 
     public Player(string Name, Weapon Weapon, int Health = 100)
     {
+        if (Weapon == null)
+            throw new ArgumentNullException(nameof(Weapon), "Player must have a weapon");
+        
         name = Name;
         health = Health;
         weapon = Weapon;
